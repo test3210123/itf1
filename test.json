@@ -1,7 +1,7 @@
 {
 "wallpaper":"https://picsum.photos/1280/720/?blur=10",
 "cu":"aHR0cHM6Ly9naXRlZS5jb20vdGVzdDMyMTAvdGVzdC9yYXcvbWFzdGVyL21kL2N1Lmpzb24=",
-"spider":"https://gitee.com/test3210/apk/raw/master/jar/0217.txt;md5;f7d67e7c69cb59ad755caa183b9d9491",
+"spider":"https://gitee.com/test3210/apk/raw/master/jar/0217.jar;md5;f7d67e7c69cb59ad755caa183b9d9491",
 "lives":[
 {"name":"live-yd","type":0,"url":"https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u","playerType":1,"epg":"http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo":"https://gitee.com/test3210/testlogo/raw/master/logo/{name}.png"},
 {"name":"live-lt","type":0,"url":"https://hub.gitmirror.com/https://github.com/test3210123/test/raw/master/sub/live2/tv3hl.txt","playerType":1,"epg":"http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo":"https://gitee.com/test3210/testlogo/raw/master/logo/{name}.png"},
