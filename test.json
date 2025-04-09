@@ -1,16 +1,12 @@
 {
 "wallpaper":"https://picsum.photos/1280/720/?blur=10",
 "cu":"aHR0cHM6Ly9naXRlZS5jb20vdGVzdDMyMTAvdGVzdC9yYXcvbWFzdGVyL21kL2N1Lmpzb24=",
-"spider":"https://gitee.com/test3210/apk/raw/master/jar/0217.jar;md5;f7d67e7c69cb59ad755caa183b9d9491",
-"lives":[
-{"name":"live-yd","type":0,"url":"https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u","playerType":1,"epg":"http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo":"https://gitee.com/test3210/testlogo/raw/master/logo/{name}.png"},
-{"name":"live-lt","type":0,"url":"https://hub.gitmirror.com/https://github.com/test3210123/test/raw/master/sub/live2/tv3hl.txt","playerType":1,"epg":"http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo":"https://gitee.com/test3210/testlogo/raw/master/logo/{name}.png"},
-{"name":"live-dx","type":0,"url":"https://hub.gitmirror.com/https://github.com/test3210123/test/raw/master/sub/live2/tv3hd.txt","playerType":1,"epg":"http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo":"https://gitee.com/test3210/testlogo/raw/master/logo/{name}.png"}
-],
+"spider":"https://gitee.com/test3210/apk/raw/master/jar/0408.jar;md5;6858973a4bae31d1e3d3b38f9fdaf4b1",
+"lives":[{"name":"live","type":0,"url":"http://127.0.0.1:9978/proxy?do=myLive&type=txt&u=aHR0cHM6Ly9naXRodWIubW9leXkueHl6L2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9zdXh1YW5nL215SVBUVi9tYWluL2lwdjQubTN1&dl=tv3hd&t=250408","playerType":1,"epg":"http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}","logo":"https://epg.112114.eu.org/logo/{name}.png"}],
 "sites": [
 {"key":"csp_Kuaikan","name":"👀快看┃推荐","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"csp_Ikanbot","name":"🌈爱看机器人┃推荐","type":3,"api":"csp_Ikanbot","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"csp_xml_金鹰资源","name":"💡金鹰资源┃推荐","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://fastly.jsdelivr.net/gh/test3210123/itf1@master/sub/MeowXP/jyzy.json"},
-{"key":"csp_xml_金鹰资源2","name":"💡金鹰资源2┃推荐","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":1,"ext":"./sub/MeowXP/jyzy.json"},
 {"key":"豆瓣┃推荐","name":"豆瓣[js]","type":3,"api":"https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/drpy.js"},
 
 {"key":"儿童教育","name":"📚儿童┃教育","type":3,"api":"https://ghfast.top/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js","ext":"https://ghfast.top/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/%E5%85%94%E5%B0%8F%E8%B4%9D.js","style":{"type":"rect","ratio":1.597},"searchable": 0,"quickSearch": 0,"changeable":0},
@@ -61,8 +57,15 @@
 
 {"key":"Jrsjs","name":"⚽看球Jrs┃体育","type":3,"api":"https://gitee.com/embracing-all-rivers-and-seas/fty/raw/master/drpy2.min.js","ext":"https://gitee.com/embracing-all-rivers-and-seas/fty/raw/master/jrk.js","style":{"type":"list"},"searchable":0,"quickSearch":0,"changeable":0},
 {"key":"310js","name":"⚽看球310┃体育","type":3,"api":"https://gitee.com/embracing-all-rivers-and-seas/fty/raw/master/drpy2.min.js","ext":"https://gitee.com/embracing-all-rivers-and-seas/fty/raw/master/310直播.js","style":{"type":"list"},"searchable":0,"quickSearch":0,"changeable":0},
-{"key":"企鹅体育xp","name":"🐧鹅鹅┃体育","type":3,"api":"csp_XPath","style":{"type":"list"},"searchable":0,"quickSearch":0,"changeable":0,"ext":"https://gitee.com/embracing-all-rivers-and-seas/fty/raw/master/企鹅直播.json"}
+{"key":"企鹅体育xp","name":"🐧鹅鹅┃体育","type":3,"api":"csp_XPath","style":{"type":"list"},"searchable":0,"quickSearch":0,"changeable":0,"ext":"https://gitee.com/embracing-all-rivers-and-seas/fty/raw/master/企鹅直播.json"},
 
+{"key":"push_agent","name":"🍭推送┃系统","type":3,"api":"csp_Push","searchable":0,"quickSearch":0,"ext":{"commonConfig":"http://127.0.0.1:9978/file/TVBox/peizhi.json"}}
+],
+"livePlayHeaders":[
+{"flag":["jstv.com"],"header":{"Referer":"http://live.jstv.com"}},
+{"flag":["ahtv.cn","cName=ahws"],"header":{"Referer":"https://www.ahtv.cn","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"}},
+{"flag":["yntv.cn","cName=ynws"],"header":{"Referer":"https://www.yntv.cn/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"}},
+{"flag":["hbtv.com","cName=hbws"],"header":{"Referer":"https://news.hbtv.com.cn"}}
 ],
 //解X设置
 "parses":[
