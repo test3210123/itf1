@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>应用下载</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f5; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .app-icon { width: 80px; height: 80px; border-radius: 18px; margin-bottom: 16px; background: #4A90D9; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 32px; font-weight: bold; }
+        .app-name { font-size: 22px; font-weight: 600; color: #333; margin-bottom: 8px; }
+        .app-desc { font-size: 14px; color: #666; text-align: center; max-width: 280px; line-height: 1.6; }
+        .privacy-link { position: fixed; bottom: 20px; font-size: 12px; color: #999; text-decoration: none; }
+
+        /* 微信引导遮罩 */
+        .wechat-mask { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 999; }
+        .wechat-mask .guide-img { position: absolute; top: 20px; right: 20px; width: 200px; pointer-events: none; }
+        .wechat-mask .guide-text { position: absolute; top: 140px; left: 0; right: 0; text-align: center; color: #fff; font-size: 18px; font-weight: 500; line-height: 1.8; }
+        .wechat-mask .close-btn { position: absolute; bottom: 40px; left: 0; right: 0; text-align: center; color: rgba(255,255,255,0.7); font-size: 14px; }
+    </style>
+</head>
+<body>
+    <!-- 页面内容保持中性，仅为产品展示 -->
+    <div class="app-icon">APP</div>
+    <div class="app-name">你的应用名称</div>
+    <div class="app-desc">在这里填写应用的简短介绍</div>
+    <a class="privacy-link" href="https://your-domain.com/privacy.html">隐私政策 | 用户协议</a>
+
+    <!-- 微信引导遮罩 -->
+    <div id="wechatMask" class="wechat-mask">
+        <img class="guide-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120'%3E%3Ctext x='10' y='30' fill='white' font-size='16'%3E👆 点击右上角 ···%3C/text%3E%3Ctext x='10' y='60' fill='white' font-size='16'%3E选择「在浏览器中打开」%3C/text%3E%3C/svg%3E" alt="引导图">
+        <div class="guide-text">当前为微信环境<br>请点击右上角 ···<br>选择「在浏览器中打开」</div>
+        <div class="close-btn">点击任意区域关闭</div>
+    </div>
+
+<script>
+(function() {
+    // ========== 🔧 配置区 ==========
+    var DOWNLOAD_PAGE_URL = './download.html'; // 下载页相对路径或绝对URL
+    // ================================
+
+    var isWechat = /MicroMessenger/i.test(navigator.userAgent);
+    var wechatMask = document.getElementById('wechatMask');
+
+    if (isWechat) {
+        // 微信环境：显示引导遮罩，不做任何跳转
+        wechatMask.style.display = 'block';
+        wechatMask.onclick = function() { wechatMask.style.display = 'none'; };
+    } else {
+        // ✅ 非微信环境：立即跳转到独立下载页
+        window.location.replace(DOWNLOAD_PAGE_URL);
+    }
+})();
+</script>
+</body>
+</html>
